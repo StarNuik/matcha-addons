@@ -5,9 +5,6 @@
 	<Include file="wow_event.lua"/>
 	<Include file="event_bus.lua"/>
 	
-	<!-- Gathering -->
-	<Include file="addons\gathering.lua"/>
-	
 	<!-- Unit Tracking -->
 	<Include file="services\svc_event.lua"/>
 	<Include file="services\unit_tracking\add.lua"/>

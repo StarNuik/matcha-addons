@@ -1,0 +1,1 @@
+These files provide additional context for AI-based code generation.
