@@ -1,0 +1,37 @@
+## Interface: 11200
+## Title: |cff74A12EMatcha|cffffffff Blame
+## Notes: Show who pulled aggro
+## Version: 0.2
+## SavedVariables: BlameSaved
+
+preload.lua
+saved.lua
+api.lua
+
+model.lua
+
+view\preload.lua
+view\view_event.lua
+view\container.lua
+view\header.lua
+view\list.lua
+view\pool.lua
+view\flex.lua
+view\list_item.lua
+view\close_button.lua
+view\main.lua
+
+services\svc_event.lua
+services\set_entries.lua
+services\add_unit.lua
+services\add_enemy.lua
+services\add_aggro.lua
+services\add_aggro_record.lua
+services\group_record.lua
+services\view_hide.lua
+services\cmd_model.lua
+services\cache_unit_info.lua
+
+slash.lua
+
+main.lua

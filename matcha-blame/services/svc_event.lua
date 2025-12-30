@@ -1,0 +1,12 @@
+svc_event = {
+	UNIT_ADDED = "UNIT_ADDED", -- function(guid)
+	ENEMY_ADDED = "ENEMY_ADDED", -- function(guid)
+	AGGRO_ADDED = "AGGRO_ADDED", -- function(guid)
+	RECORD_ADDED = "RECORD_ADDED", -- function(idx)
+	GROUP_UPDATED = "GROUP_UPDATED", -- function(idx)
+	UNIT_CACHE_ADDED = "UNIT_CACHE_ADDED",
+	CMD_MODEL_CLEAR = "CMD_MODEL_CLEAR",
+	CMD_MODEL_SHOW = "CMD_MODEL_SHOW",
+	CMD_LIMIT = "CMD_LIMIT", -- function(num)
+	MODEL_CHANGED = "SVC_MODEL_CHANGED"
+}

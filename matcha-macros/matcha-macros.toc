@@ -1,0 +1,12 @@
+## Interface: 11200
+## Title: |cff74A12EMatcha|cffffffff Macros
+## Notes: Matcha's personal macros collection
+## Version: 0.1
+
+matcha.lua
+
+priest.lua
+shaman.lua
+warlock.lua
+druid.lua
+hunter.lua
