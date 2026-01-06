@@ -1,0 +1,5 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Include file="lib\_load.xml"/>
+	<Include file="matcha.lua"/>
+	<Include file="classy\_load.xml"/>
+</Ui>

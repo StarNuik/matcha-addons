@@ -1,0 +1,8 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<!-- Data -->
+	<Include file="spellbook.lua"/>
+	
+	<!-- Funcs -->
+	<Include file="buff.lua"/>
+	<Include file="spell.lua"/>
+</Ui>

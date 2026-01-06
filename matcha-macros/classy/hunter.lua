@@ -15,7 +15,7 @@ function hunter.Shoot()
 		-- castMark,
 		-- matcha_IfNotThen(function() return UnitAffectingCombat("target") end, castAimed),
 		castAutoShot,
-		castCon,
+		-- castCon,
 		castSerpent,
 		castArcane,
 		-- hunter.cast_steady_shot,

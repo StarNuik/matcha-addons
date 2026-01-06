@@ -1,0 +1,11 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Include file="druid.lua"/>
+	<Include file="hunter.lua"/>
+	<Include file="mage.lua"/>
+	<Include file="paladin.lua"/>
+	<Include file="priest.lua"/>
+	<Include file="rogue.lua"/>
+	<Include file="shaman.lua"/>
+	<Include file="warlock.lua"/>
+	<Include file="warrior.lua"/>
+</Ui>

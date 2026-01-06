@@ -45,6 +45,7 @@ local totems = {
 	"PoisonCleansing",
 	"Tremor",
 	"Grounding",
+	"HealingStream",
 }
 local function build_cast_totem(idx)
 	return function()
@@ -117,8 +118,20 @@ function shaman.CastStormstrike()
 end
 
 function shaman.HasStrengthOfEarth()
-	return Zorlen_checkBuff(nil, "player", nil, "Strength of Earth")
+	local buff_name = "Strength of Earth"
+	return Zorlen_checkBuff(nil, "player", nil, buff_name)
 end
+
+function shaman.HasGrounding()
+	local buff_name = "Grounding Totem Effect"
+	return Zorlen_checkBuff(nil, "player", nil, buff_name)
+end
+
+function shaman.HasHealingStream()
+	local buff_name = "Healing Stream"
+	return Zorlen_checkBuff(nil, "player", nil, buff_name)
+end
+
 
 function shaman.HasStoneskin(unit_id)
 	local unit_id = unit_id or "player"
@@ -222,23 +235,29 @@ function shaman.TotemSpam()
 		-- matcha.Target,
 	}, {
 		shaman.ExitWolf,
-		-- matcha_IfNotThen(
-		-- 	shaman.HasManaSpring,
-		-- 	matcha.SpamGuard(
-		-- 		shaman.CastTotemFunc("ManaSpring"),
-		-- 		"water_totem",
-		-- 		1
-		-- 	)
-		-- ),
-		-- matcha_IfNotThen(shaman.HasStrengthOfEarth,
-		-- 	matcha.SpamGuard(
-		-- 		shaman.CastTotemFunc("StrengthOfEarth"),
-		-- 		"earth_totem",
-		-- 		1
-		-- 	)
-		-- ),
-		matcha.SpamGuard(shaman.CastTotemFunc("Searing"), "fire_totem", 1),
-		matcha.SpamGuard(shaman.CastTotemFunc("Grounding"), "air_totem", 1),
+		-- matcha.SpamGuard(shaman.CastTotemFunc("Searing"), "fire_totem", 1),
+		matcha_IfNotThen(
+			shaman.HasHealingStream,
+			matcha.SpamGuard(
+				shaman.CastTotemFunc("HealingStream"),
+				"water_totem",
+				1
+			)
+		),
+		matcha_IfNotThen(shaman.HasStrengthOfEarth,
+			matcha.SpamGuard(
+				shaman.CastTotemFunc("StrengthOfEarth"),
+				"earth_totem",
+				1
+			)
+		),
+		matcha_IfNotThen(shaman.HasGrounding,
+			matcha.SpamGuard(
+				shaman.CastTotemFunc("Grounding"),
+				"air_totem",
+				1
+			)
+		),
 	})
 end
 

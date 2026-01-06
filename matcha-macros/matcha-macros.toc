@@ -3,10 +3,4 @@
 ## Notes: Matcha's personal macros collection
 ## Version: 0.1
 
-matcha.lua
-
-priest.lua
-shaman.lua
-warlock.lua
-druid.lua
-hunter.lua
+_load.xml

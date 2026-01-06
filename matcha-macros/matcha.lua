@@ -1,5 +1,11 @@
 -- Namespace
-matcha = {}
+if not matcha then
+	matcha = {}
+end
+
+-- mapi.Sub(mapi.wow_event.WOW_UNIT_CASTEVENT, function(caster_id, _, _, spell_id)
+-- 	print(UnitName(caster_id), spell_id, SpellInfo(spell_id))
+-- end)
 
 -- Runtime
 runtime = {
